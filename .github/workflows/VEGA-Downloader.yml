@@ -46,6 +46,6 @@ jobs:
       with:
         files: |
           *.rar
-        name: ${{ github.event.inputs.TEXT_LINK }}
-        tag_name: ${{ env.BUILD_DATE }}
+        name: ${{ github.event.inputs.TEXT_LINK }}/${{ env.BUILD_DATE }}
+        tag_name: ${{ github.run_id }}
         body: |
